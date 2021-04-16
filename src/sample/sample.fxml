@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="776.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab fx:id="TbReceiving" text="Receiving">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="283.0" prefWidth="600.0">
+               <children>
+                  <ScrollPane fx:id="receivingScroll" layoutX="14.0" layoutY="120.0" prefHeight="200.0" prefWidth="746.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="1735.0">
+                           <children>
+                              <TableView fx:id="TblReceiving" prefHeight="187.0" prefWidth="1732.0">
+                                <columns>
+                                  <TableColumn fx:id="RTCfolioID" editable="false" prefWidth="75.0" text="FolioId" />
+                                  <TableColumn fx:id="RTCstrap" prefWidth="75.0" text="Strap" />
+                                    <TableColumn fx:id="RTCparcel" prefWidth="75.0" text="Parcel" />
+                                    <TableColumn fx:id="RTCname" prefWidth="75.0" text="Name" />
+                                    <TableColumn fx:id="RTCothers" prefWidth="72.79998779296875" text="Others" />
+                                    <TableColumn fx:id="RTCaddress1" prefWidth="77.60003662109375" text="Address 1" />
+                                    <TableColumn fx:id="RTCaddress2" prefWidth="75.0" text="Address 2" />
+                                    <TableColumn fx:id="RTCcity" prefWidth="75.0" text="City" />
+                                    <TableColumn fx:id="RTCstate" prefWidth="75.0" text="State" />
+                                    <TableColumn fx:id="RTCzip" prefWidth="75.0" text="Zip" />
+                                    <TableColumn fx:id="RTCcountry" prefWidth="75.0" text="Country" />
+                                    <TableColumn fx:id="RTCinstrument" prefWidth="75.0" text="Instrument" />
+                                    <TableColumn fx:id="RTCvacImp" prefWidth="75.0" text="VacImp" />
+                                    <TableColumn fx:id="RTCamount" prefWidth="75.0" text="Amount" />
+                                    <TableColumn fx:id="RTCkeyNumber" prefWidth="75.0" text="KeyNumber" />
+                                    <TableColumn fx:id="RTCdos" prefWidth="75.0" text="DOS" />
+                                    <TableColumn fx:id="RTCsiteNum" prefWidth="75.0" text="SiteNum" />
+                                    <TableColumn fx:id="RTCsiteStreet" prefWidth="75.0" text="SiteStreet" />
+                                    <TableColumn fx:id="RTCsiteCity" prefWidth="75.0" text="SiteCity" />
+                                    <TableColumn fx:id="RTCsiteZip" prefWidth="75.0" text="SiteZip" />
+                                    <TableColumn fx:id="RTClegal" prefWidth="75.0" text="Legal" />
+                                    <TableColumn fx:id="RTCtype" prefWidth="75.0" text="Type" />
+                                    <TableColumn fx:id="RTCmultiMessage" prefWidth="75.0" text="MultiMessage" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <ChoiceBox fx:id="recDate" layoutX="14.0" layoutY="85.0" prefWidth="150.0" />
+                  <Label fx:id="LblSelectDate" layoutX="9.0" layoutY="63.0" prefHeight="18.0" prefWidth="167.0" text="Select Date To View Recieving" />
+                  <Button fx:id="BtnProcess" layoutX="431.0" layoutY="85.0" mnemonicParsing="false" text="Process" />
+                  <ImageView fx:id="LCPAlogo1" fitHeight="110.0" fitWidth="113.0" layoutX="661.0" layoutY="6.0" pickOnBounds="true">
+                     <image>
+                        <Image url="file:/C:/Users/Tyler/OneDrive/Documents/FGCU/Spring%202021/Requirements%20Eng/PropertyAssessmentPrototype/rsc/LeePALogo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="TbProcessing" text="Processing">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ProgressBar fx:id="ProgAssessment" layoutX="255.0" layoutY="188.0" prefHeight="18.0" prefWidth="302.0" progress="0.0" />
+                  <TextField fx:id="TxtDate" layoutX="253.0" layoutY="135.0" />
+                  <Label fx:id="LblSelectedDate" layoutX="126.0" layoutY="138.0" prefHeight="18.0" prefWidth="118.0" text="Date Being Processed" />
+                  <Label fx:id="TxtStatus" layoutX="199.0" layoutY="188.0" prefHeight="18.0" prefWidth="48.0" text="Status" />
+                  <ImageView fx:id="LCPAlogo2" fitHeight="110.0" fitWidth="113.0" layoutX="661.0" layoutY="6.0" pickOnBounds="true">
+                     <image>
+                        <Image url="file:/C:/Users/Tyler/OneDrive/Documents/FGCU/Spring%202021/Requirements%20Eng/PropertyAssessmentPrototype/rsc/LeePALogo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="TbReview" text="Review">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane fx:id="reviewScroll" layoutX="21.0" layoutY="128.0" prefHeight="200.0" prefWidth="739.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="1263.0">
+                           <children>
+                              <TableView fx:id="TblReview" prefHeight="187.0" prefWidth="1732.0">
+                                 <columns>
+                                    <TableColumn fx:id="RevFolioID" editable="false" prefWidth="75.0" text="FolioId" />
+                                    <TableColumn fx:id="RevStrap" prefWidth="75.0" text="Strap" />
+                                    <TableColumn fx:id="RevParcel" prefWidth="75.0" text="Parcel" />
+                                    <TableColumn fx:id="RevName" prefWidth="75.0" text="Name" />
+                                    <TableColumn fx:id="RevPropCode" prefWidth="91.20001220703125" text="Property Code" />
+                                    <TableColumn fx:id="RevAddress" prefWidth="62.4000244140625" text="Address 1" />
+                                    <TableColumn fx:id="RevAddress2" prefWidth="85.5999755859375" text="Address 2" />
+                                    <TableColumn fx:id="RevCity" prefWidth="64.800048828125" text="City" />
+                                    <TableColumn fx:id="RevState" prefWidth="75.0" text="State" />
+                                    <TableColumn fx:id="RevZip" prefWidth="75.0" text="Zip" />
+                                    <TableColumn fx:id="RevCountry" prefWidth="75.0" text="Country" />
+                                    <TableColumn fx:id="RevInstrument" prefWidth="75.0" text="Instrument" />
+                                    <TableColumn fx:id="RevVacImap" prefWidth="75.0" text="VacImp" />
+                                    <TableColumn fx:id="RevAmount" prefWidth="75.0" text="Amount" />
+                                    <TableColumn fx:id="RevKeyNumber" prefWidth="75.0" text="KeyNumber" />
+                                    <TableColumn fx:id="RevDOS" prefWidth="75.0" text="DOS" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <Label fx:id="LblReviewDate" layoutX="21.0" layoutY="67.0" prefHeight="18.0" prefWidth="135.0" text="Date to Review" />
+                  <ChoiceBox fx:id="revDate" layoutX="21.0" layoutY="86.0" prefWidth="150.0" />
+                  <ImageView fx:id="LCPAlogo3" fitHeight="110.0" fitWidth="113.0" layoutX="661.0" layoutY="6.0" pickOnBounds="true">
+                     <image>
+                        <Image url="file:/C:/Users/Tyler/OneDrive/Documents/FGCU/Spring%202021/Requirements%20Eng/PropertyAssessmentPrototype/rsc/LeePALogo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
